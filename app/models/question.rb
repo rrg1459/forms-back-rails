@@ -1,3 +1,23 @@
+# == Schema Information
+#
+# Table name: questions
+#
+#  id            :integer          not null, primary key
+#  content       :string
+#  mandatory     :boolean          default(FALSE), not null
+#  question_type :integer          default("single_choice"), not null
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#  survey_id     :integer          not null
+#
+# Indexes
+#
+#  index_questions_on_survey_id  (survey_id)
+#
+# Foreign Keys
+#
+#  survey_id  (survey_id => surveys.id)
+#
 class Question < ApplicationRecord
   belongs_to :survey
   has_many :options, dependent: :destroy
