@@ -39,7 +39,7 @@ group :development do
   gem 'annotaterb', '~> 4.17'
   gem 'byebug', '~> 12.0'
   gem 'dotenv-rails', '~> 3.1'
-  gem 'rubocop-rails', '~> 2.32', require: false # Para reglas de Rails
+  gem 'rubocop-rails', '~> 2.34', require: false # Para reglas de Rails
 end
 
 group :development, :test do
