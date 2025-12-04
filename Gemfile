@@ -38,7 +38,7 @@ gem "rack-cors"
 group :development do
   gem 'annotaterb', '~> 4.17'
   gem 'byebug', '~> 12.0'
-  gem 'dotenv-rails', '~> 3.1'
+  gem 'dotenv-rails', '~> 3.2'
   gem 'rubocop-rails', '~> 2.32', require: false # Para reglas de Rails
 end
 
